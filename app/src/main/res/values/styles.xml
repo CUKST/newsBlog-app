@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme_forTech" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#B0C1DD</item>
+    </style>
+    <style name="AppTheme_forScience" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#342953</item>
+    </style>
+    <style name="AppTheme_forSport" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#CA8731</item>
+    </style>
+    <style name="AppTheme_forEntertainment" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#CBE3D7</item>
+    </style>
+    <style name="AppTheme_forBitcoin" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#8F949C</item>
+    </style>
+
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light">
+    </style>
+
+
+</resources>

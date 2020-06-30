@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/newslogo"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".entertainment.EntertainmentActivity"
+                  android:theme="@style/AppTheme_forEntertainment"
+        android:parentActivityName=".First">
+        </activity>
+        <activity android:name=".science.WebForScience"
+        android:parentActivityName=".science.ScienceActivity">
+        </activity>
+        <activity android:name=".entertainment.WebForEntertainment"
+        android:parentActivityName=".entertainment.EntertainmentActivity">
+        </activity>
+        <activity android:name=".science.ScienceActivity"
+                  android:theme="@style/AppTheme_forScience"
+
+                  android:parentActivityName=".First">
+        </activity>
+        <activity
+                android:name=".bitcoin.WebForBitCoin"
+                android:parentActivityName=".bitcoin.BitCoinActivity">
+        </activity>
+        <activity
+                android:name=".bitcoin.BitCoinActivity"
+                android:theme="@style/AppTheme_forBitcoin"
+                android:parentActivityName=".First">
+        </activity>
+        <activity
+                android:name=".technology.WebForTech"
+                android:parentActivityName=".technology.TechnologyActivity">
+        </activity>
+        <activity
+                android:name=".technology.TechnologyActivity"
+                android:theme="@style/AppTheme_forTech"
+                android:parentActivityName=".First">
+        </activity>
+        <activity
+                android:name=".sport.WebForSport"
+                android:parentActivityName=".sport.SportActivity">
+        </activity>
+        <activity
+                android:name=".sport.SportActivity"
+                android:theme="@style/AppTheme_forSport"
+                android:parentActivityName=".First">
+        </activity>
+        <activity android:name=".First">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".corona.WebEnable"
+                android:parentActivityName=".corona.MainActivity">
+        </activity>
+        <activity
+                android:name=".corona.MainActivity"
+                android:parentActivityName=".First">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

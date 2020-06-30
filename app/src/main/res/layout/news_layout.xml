@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/relative"
+        android:elevation="10dp"
+        android:layout_height="wrap_content"
+        >
+        <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginLeft="14dp"
+                android:padding="10dp"
+                android:elevation="10dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_marginTop="1dp"
+                                android:layout_height="wrap_content">
+                       <TextView android:layout_width="match_parent"
+                                          android:text="20.30.40"
+                                          android:textColor="#DDCBCB"
+                                          android:id="@+id/newDate"
+                                          android:textSize="15dp"
+                                          android:textStyle="italic"
+                                          android:gravity="center"
+                                          android:layout_height="50dp"/>
+
+                        <ImageView android:layout_width="match_parent"
+                                   android:src="@drawable/news"
+                                   android:id="@+id/newImage"
+                                   android:layout_below="@id/newDate"
+                                   android:layout_height="200dp"/>
+                        <TextView android:layout_width="match_parent"
+                                  android:text="Title"
+                                  android:textSize="10dp"
+                                  android:textColor="#DDCBCB"
+                                  android:textStyle="italic"
+                                  android:layout_marginLeft="30dp"
+                                  android:id="@+id/newTitle"
+                                  android:layout_below="@id/newImage"
+                                  android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="match_parent"
+                              android:text="Arthur"
+                              android:id="@+id/newArthur"
+                              android:layout_marginTop="1dp"
+                              android:drawableLeft="@drawable/ic_account"
+                              android:textSize="10dp"
+                              android:layout_below="@+id/newTitle"
+                              android:layout_marginLeft="30dp"
+                              android:layout_height="50dp"/>
+                    <TextView android:layout_width="match_parent"
+                              android:text="Description..."
+                              android:layout_below="@id/newArthur"
+                              android:gravity="center"
+                              android:id="@+id/newsDesc"
+                              android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+</RelativeLayout>
